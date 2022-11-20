@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkBlue: hsl(229, 23%, 23%);
+    --darkGrayBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+    --initalFontSize: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  position: relative;
+  background: var(--darkCyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../Images/bg-pattern-top.svg'), url('../Images/bg-pattern-bottom.svg');
+  background-position: top 150% left -100%, bottom 150% right -100%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--darkCyan);
+  padding: 0 10px;
+}
+
+.container {
+  width: 350px;
+}
+.card {
+  background: url('../Images/bg-pattern-card.svg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.171);
+  height: 70vh;
+}
+
+.card-header {
+  height: 40%;
+}
+
+.card-profile {
+  background: #fff;
+  position: relative;
+  text-align: center;
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-profile {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-profile-info {
+  margin-top: 10px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+span {
+  color: var(--darkGrayBlue)
+}
+
+p span {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 4px;
+  color: var(--veryDarkBlue);
+}
+
+.card-footer {
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-top: 0.1px solid rgb(190, 189, 189);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 20px;
+}
+
+
+
+@media(max-width: 1440px) {
+  body {
+      background-position: top 150% left -60%, bottom 150% right -60%;
+  }
+}
+@media(max-width: 1000px) {
+  body {
+      background-position: top 170% left -25rem, bottom 170% right -25rem;
+  }
+}
+@media(max-width: 375px) {
+  body {
+      background-position: top 110% left -50rem, bottom 150% right -45rem;
+  }
+
+}
+
