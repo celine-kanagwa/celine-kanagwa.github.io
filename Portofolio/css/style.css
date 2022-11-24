@@ -245,7 +245,8 @@ background-color: var(--primary);
 }
 
 .portfolio-img {
-    position: relative;
+  
+    position:relative;
 }
 
 .portfolio-btn {
@@ -254,13 +255,12 @@ background-color: var(--primary);
     height: 100%;
     top: 0;
     left: 0;
-    /*background: rgba(98, 68, 197, .9);*/
     background-color:var(--primary);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     padding: 30px;
-    padding-bottom: 200px !important;
+    padding-bottom: 250px !important;
     opacity: 0;
     transition: .5s;
 }
@@ -269,3 +269,4 @@ background-color: var(--primary);
     opacity: 1;
     padding-bottom: 30px !important;
 }
+
